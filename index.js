@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
   audio.addEventListener("ended", () => {
-    playIcon.src = "/resources/Play_fill.svg";
+    playIcon.src = "./resources/Play_fill.svg";
   });
 
   progressContainer.addEventListener("click", function (e) {
@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function playPause() {
     if (audio.paused) {
       audio.play();
-      playIcon.src = "/resources/Stop.svg";
+      playIcon.src = "./resources/Stop.svg";
     } else {
       audio.pause();
-      playIcon.src = "/resources/Play_fill.svg";
+      playIcon.src = "./resources/Play_fill.svg";
     }
   }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("artist").textContent = songs[index].author;
     document.querySelector(".card img").src = songs[index].img;
     progressFill.style.width = "0%";
-    playIcon.src = "/resources/Play_fill.svg";
+    playIcon.src = "./resources/Play_fill.svg";
   }
 
   function updateProgressBar() {
