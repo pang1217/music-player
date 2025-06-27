@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function playPause() {
     if (audio.paused) {
       audio.play();
-      playIcon.src = "/resources/Stop.svg";
+      playIcon.src = "./resources/Stop.svg";
     } else {
       audio.pause();
       playIcon.src = "/resources/Play_fill.svg";
